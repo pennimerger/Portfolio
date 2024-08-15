@@ -100,7 +100,7 @@
     @apply text-[60px] text-center lg:text-[72px];
   }
   .hero-h2 {
-    @apply text-3xl text-foreground tracking-widest;
+    @apply text-[36px] text-foreground tracking-widest;
   }
   .socials {
     @apply w-[30px] lg:w-[45px] m-1;

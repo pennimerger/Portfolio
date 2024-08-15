@@ -4,7 +4,7 @@ import Sidebar from './Sidebar'
 
 const Navbar = () => {
   return (
-    <div className="h-[100px] w-full flex fixed z-[100]">
+    <div className="h-[100px] w-full flex fixed top-0 z-[100]">
       <div className='relative z-10'>
       <Sidebar/>
       </div>

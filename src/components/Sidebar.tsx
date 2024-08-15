@@ -23,8 +23,8 @@ const Sidebar = () => {
         <QuickLinks />
       </SheetDescription>
       <SheetFooter>
-        <span className="lg:mr-[17%] absolute bottom-0 text-center overflow-hidden">
-          <p className="text-[10px] lg:text-[13px]">
+        <span className="absolute bottom-0 text-center overflow-hidden">
+          <p className="text-[10px] px-[85px]">
             &copy; 2024 Emmanuel Ashiegbulam. <br />
             All rights reserved.
           </p>

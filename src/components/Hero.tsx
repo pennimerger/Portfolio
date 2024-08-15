@@ -58,7 +58,7 @@ const Hero = () => {
         src={Emmanuel} 
         className="relative w-full h-full object-contain" alt="" />
         <img
-          className="w-[25px] h-[25px] top-[15%] absolute z-10 right-[30%] cursor-pointer"
+          className="w-[25px] h-[25px] top-[100px] absolute z-10 right-[190px] cursor-pointer"
           src={themeIcon}
           alt="Theme mode icon"
           onClick={toggleTheme}
