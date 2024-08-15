@@ -13,7 +13,7 @@ const Navbar = () => {
           <motion.div
           className='whitespace-nowrap pt-2'
           initial={{ x: "200%"}}
-          animate={{ x: "-120%"}}
+          animate={{ x: "-220%"}}
           transition={{ 
             repeat: Infinity,
             repeatType: "loop",

@@ -1,5 +1,5 @@
 import { Menu } from "lucide-react"
-import { Sheet, SheetTrigger, SheetContent, SheetFooter, SheetTitle, SheetDescription } from "./ui/sheet"
+import { Sheet, SheetTrigger, SheetContent, SheetFooter, SheetTitle, SheetDescription, SheetClose } from "./ui/sheet"
 import { Separator } from "./ui/separator"
 import QuickId from "./QuickId"
 import QuickLinks from "./QuickLinks"
@@ -20,7 +20,9 @@ const Sidebar = () => {
       </SheetTitle>
       <Separator className="bg-foreground"/>
       <SheetDescription className="flex flex-col gap-4">
-        <QuickLinks />
+        <SheetClose>
+          <QuickLinks />
+        </SheetClose>
       </SheetDescription>
       <SheetFooter>
         <span className="absolute bottom-0 text-center overflow-hidden">
