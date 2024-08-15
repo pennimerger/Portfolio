@@ -53,12 +53,12 @@ const Hero = () => {
           </motion.h1>
         </motion.div>
       </div>
-      <div className="flex item-center h-full absolute lg:right-0 lg:w-[50%] w-full bottom-0">
+      <div className="flex item-center h-full absolute lg:right-0 lg:w-[50%] w-full bottom-0 sm:top-10">
         <img 
         src={Emmanuel} 
         className="relative w-full h-full object-contain" alt="" />
         <img
-          className="w-[25px] h-[25px] top-[100px] relative z-10 right-[200px] cursor-pointer"
+          className="w-[25px] h-[25px] top-40 relative z-10 right-40 cursor-pointer"
           src={themeIcon}
           alt="Theme mode icon"
           onClick={toggleTheme}
