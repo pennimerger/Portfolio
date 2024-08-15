@@ -53,7 +53,7 @@ const Hero = () => {
           </motion.h1>
         </motion.div>
       </div>
-      <div className="flex item-center h-full absolute lg:right-0 lg:w-[50%] w-full bottom-0 sm:top-10">
+      <div className="flex item-center h-full absolute lg:right-0 lg:w-[50%] w-full bottom-0 top-20">
         <img 
         src={Emmanuel} 
         className="relative w-full h-full object-contain" alt="" />
