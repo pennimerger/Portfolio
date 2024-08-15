@@ -34,7 +34,7 @@ const Hero = () => {
         <motion.div
           className="lg:w-1/2 lg:h-full lg:flex lg:flex-col lg:justify-center lg:gap-10 h-1/2 w-full gap-5 items-center text-center"
           variants={textVariants}>
-        <div className='flex justify-center gap-2'>
+        <div className='flex flex-wrap items-center justify-center gap-2 overflow-hidden'>
         <motion.h2 
           variants={textVariants}
           initial="initial"
@@ -58,7 +58,7 @@ const Hero = () => {
         src={Emmanuel} 
         className="relative w-full h-full object-contain" alt="" />
         <img
-          className="w-[25px] h-[25px] top-[100px] absolute z-10 right-[190px] cursor-pointer"
+          className="w-[25px] h-[25px] top-[100px] relative z-10 right-[200px] cursor-pointer"
           src={themeIcon}
           alt="Theme mode icon"
           onClick={toggleTheme}
