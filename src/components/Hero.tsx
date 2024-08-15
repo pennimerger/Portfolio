@@ -56,7 +56,7 @@ const Hero = () => {
       <div className="flex item-center h-full absolute lg:right-0 lg:w-[50%] w-full bottom-0 top-20">
         <img 
         src={Emmanuel} 
-        className="relative w-full h-full object-contain" alt="Emmanuel Smiling" />
+        className="relative w-full h-full object-contain" alt="Emmanuel Smiling Image" />
         <img
           className="w-[25px] h-[25px] top-40 relative z-10 right-40 cursor-pointer"
           src={themeIcon}
