@@ -1,30 +1,64 @@
-# React + TypeScript + Vite
+# Portfolio Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to the repository for my personal portfolio website! 🚀
 
-Currently, two official plugins are available:
+## Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This portfolio site is built with modern web technologies and includes:
 
-## Expanding the ESLint configuration
+- **React, TypeScript, HTML, CSS, Tailwind**
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Features
 
-- Configure the top-level `parserOptions` property like this:
+- **Responsive Design:** Optimized for all devices.
+- **Dynamic Content:** Showcases my latest projects and achievements.
+- **Interactive Elements:** Engaging UI components and animations.
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json', './tsconfig.app.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+## Setup Instructions
+
+Follow these steps to get the project up and running on your local machine:
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/pennimerger/Portfolio.git
+cd Portfolio
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+### 2. Install Dependencies
+
+```bash
+npm install
+```
+
+### 3. Set Up Environment Variables
+
+Create a `.env` file in the root directory and necessary environment variables for mailing. 
+Visit [EmailJs](https://emailjs.com) to understand and get `templateId`, `serviceId` and `publicKey`.
+
+### 4. Run the Development Server
+
+```bash
+npm run dev
+```
+
+
+## Customization
+
+Feel free to customize the portfolio by editing the following files:
+
+- **src/components/:** React components and UI elements.
+- **public | src/assets/:** Media used in the portfolio.
+- **src/index.css/:** Tailwind and custom css styles.
+
+## Contributing
+
+Contributions are welcome! If you’d like to contribute, please fork the repository and submit a pull request with your changes.
+
+## Contact
+
+For any questions or inquiries, please reach out to me:
+- [**LinkedIn**](https://linkedin.com/in/emmanuel-ashiegbulam-5a2a38135)
+- [**Personal Website**](https://t.ly/cQEGZ)
+
+Thank you for checking out my portfolio! 🌟
