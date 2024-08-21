@@ -13,9 +13,11 @@ const Contact = () => {
   const formRef = useRef<HTMLFormElement>(null)
   const [error, setError] = useState(false)
   const [success, setSuccess] = useState(false)
+  const [isLoading, setIsLoading] = useState(false)
 
   const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
+    setIsLoading(true)
 
     if (formRef.current)
     emailjs
@@ -30,6 +32,8 @@ const Contact = () => {
           setSuccess(true)
           success && toast.success("Sent to Emmanuel.")
           error && console.log(error)
+          formRef.current?.reset()
+          setIsLoading(false)
           console.log(result)
         },
         (error) => {
@@ -53,7 +57,8 @@ const Contact = () => {
       <input className="input" type="text" required placeholder="Name" name="name"/>
       <input className="input" type="email" required placeholder="Email" name="email"/>
       <textarea rows={8} className="input" placeholder="Message" name="message"/>
-      <Button className="bborder text-white w-1/4">Submit</Button>
+      <Button disabled={isLoading}
+      className="bborder text-white w-1/4">{isLoading? "Sending..." : "Send"}</Button>
     </form>
     <div className="flex flex-col gap-2 justify-center items-center h-full lg:right-0 lg:absolute lg:pt-20 lg:w-[50%] w-full bottom-0 mt-5">
       <h2 className="hero-h2 text-center">Scan for Whatsapp chat.</h2>
